@@ -1,0 +1,9 @@
+-- Activity 1 --
+CREATE TABLE salesman (
+    salesman_id INT PRIMARY KEY,
+    salesman_name VARCHAR2(32),
+    salesman_city VARCHAR2(32),
+    commission INT
+);
+
+DESCRIBE salesman;
