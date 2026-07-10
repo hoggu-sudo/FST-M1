@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Generated Key ID: 156864131]]>
+    </line>
+    <line>
+      <![CDATA[{
+    "id": 156864131,
+    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK1DC8fXPmfgDSpqQx1tT0+lHBgS7Zg/WHbf7Zf9AexG",
+    "created_at": "2026-07-10T03:37:39Z",
+    "last_used": null,
+    "url": "https://api.github.com/user/keys/156864131",
+    "title": "TestAPIKey",
+    "verified": true,
+    "read_only": false
+}]]>
+    </line>
+    <line>
+      <![CDATA[DELETE Status: 204]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-07-10T09:07:37 IST" name="Default suite" finished-at="2026-07-10T09:07:40 IST" duration-ms="3010">
+    <groups>
+    </groups>
+    <test started-at="2026-07-10T09:07:37 IST" name="Default test" finished-at="2026-07-10T09:07:40 IST" duration-ms="3010">
+      <class name="activities.GitHubActivity">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:activities.GitHubActivity@161479c6]" started-at="2026-07-10T09:07:37 IST" name="setUp" finished-at="2026-07-10T09:07:38 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addSSHKey()[pri:1, instance:activities.GitHubActivity@161479c6]" started-at="2026-07-10T09:07:38 IST" name="addSSHKey" finished-at="2026-07-10T09:07:39 IST" duration-ms="1678" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Generated Key ID: 156864131]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addSSHKey -->
+        <test-method signature="getSSHKey()[pri:2, instance:activities.GitHubActivity@161479c6]" started-at="2026-07-10T09:07:39 IST" name="getSSHKey" finished-at="2026-07-10T09:07:40 IST" depends-on-methods="activities.GitHubActivity.addSSHKey" duration-ms="411" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[{
+    "id": 156864131,
+    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK1DC8fXPmfgDSpqQx1tT0+lHBgS7Zg/WHbf7Zf9AexG",
+    "created_at": "2026-07-10T03:37:39Z",
+    "last_used": null,
+    "url": "https://api.github.com/user/keys/156864131",
+    "title": "TestAPIKey",
+    "verified": true,
+    "read_only": false
+}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getSSHKey -->
+        <test-method signature="deleteSSHKey()[pri:3, instance:activities.GitHubActivity@161479c6]" started-at="2026-07-10T09:07:40 IST" name="deleteSSHKey" finished-at="2026-07-10T09:07:40 IST" depends-on-methods="activities.GitHubActivity.addSSHKey" duration-ms="380" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[DELETE Status: 204]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteSSHKey -->
+      </class> <!-- activities.GitHubActivity -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
